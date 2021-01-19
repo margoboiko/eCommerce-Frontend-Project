@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+.container {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+#sale {
+  font-size: 100px;
+}
+
+.carousel {
+  width: 726px;
+}
+
+#summer {
+  flex-direction: column;
+  height: 335px;
+  width: 270px;
+}
+
+img {
+  width: 870px;
+  height: 506px;
+}
+
+.carousel-indificators li {
+  transition: opacity 0.3s easy;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
