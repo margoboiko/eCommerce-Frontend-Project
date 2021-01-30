@@ -1,0 +1,25 @@
+{
+  "name": "ecommerce-frontend-project",
+  "version": "1.0.0",
+  "description": "project",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/margoboiko/eCommerce-Frontend-Project.git).git"
+  },
+  "author": "margoboiko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/margoboiko/eCommerce-Frontend-Project.git)/issues"
+  },
+  "homepage": "https://github.com/margoboiko/eCommerce-Frontend-Project.git)#readme"
+}

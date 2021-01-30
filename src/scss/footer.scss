@@ -1,0 +1,72 @@
+@import "variables.scss";
+
+$carousel-transition: opacity .3s easy;
+
+* {
+	margin: 0;
+	padding: 0;
+	font-weight: normal;
+	font-family: $font-primary, Arial, Helvetica, sans-serif;
+	line-height: 1.2;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+
+html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+}
+
+body.noscroll {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+
+main {
+    padding-top: 5.9285714286rem;
+    
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+     padding: 100px;
+     color: #333333;
+     font-size: small;
+     background-color: white;
+ }
+
+ .footer-row {
+     display: flex;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+
+ .footer-col {
+     margin: 30px 25px;
+ }
+
+ .footer-img {
+     margin: 30px 10px;
+}
+
+ .footer-title {
+     margin-bottom: 20px;
+ }
+
+ a {
+     color: black;
+     text-decoration-line: none;
+     > svg {
+         color: $color-icons;
+     }
+ }
