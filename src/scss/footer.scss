@@ -14,7 +14,7 @@ $carousel-transition: opacity .3s easy;
 }
 
 html {
-    font-size: 14px;
+    font-size: 13px;
     scroll-behavior: smooth;
 }
 
@@ -22,27 +22,18 @@ body {
     position: relative;
 }
 
-body.noscroll {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	overflow: hidden;
-}
-
 main {
-    padding-top: 5.9285714286rem;
+    padding-top: 6rem;
     
 }
 
 footer {
-    position: absolute;
-    width: 100%;
-     padding: 100px;
-     color: #333333;
-     font-size: small;
-     background-color: white;
+    width: 1280px;
+    text-align: center;
+    margin: auto 0;
+    color: $color-secondary;
+    font-size: small;
+    background-color: $color-primary;
  }
 
  .footer-row {
@@ -52,21 +43,25 @@ footer {
  }
 
  .footer-col {
-     margin: 30px 25px;
+    margin: 30px 25px;
+    h4 {
+     font-family: $font-accent;
+     font-size: 13px;
+    }
+    a {
+        text-decoration: none;
+        color: $color-secondary;
+        opacity: 0.7;
+    }
  }
 
  .footer-img {
      margin: 30px 10px;
+    .fab, .far {
+        color: $color-icons;
+    }
 }
 
  .footer-title {
      margin-bottom: 20px;
- }
-
- a {
-     color: black;
-     text-decoration-line: none;
-     > svg {
-         color: $color-icons;
-     }
  }
