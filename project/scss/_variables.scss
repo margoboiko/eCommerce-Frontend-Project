@@ -1,0 +1,35 @@
+// Font Section --------------------------------------------------
+@font-face {
+    font-family: 'Lato';
+    src: url('../fonts/Lato-Regular.ttf') format('truetype'),
+}
+
+@font-face {
+    font-family: 'Lato Bold';
+    src: url('../fonts/Lato-Bold.ttf') format('truetype'),
+}
+
+$font-primary: "Lato", sans-serif;
+$font-accent: "Lato Bold", sans-sefir;
+
+// Color Section -------------------------------------------------
+$color-primary: white;
+$color-secondary: #45413e;
+$color-logo: #011847;
+$color-accent: #84bc22;
+$color-hover: #9fdb36;
+$color-dot: #a3b5bd;
+$color-icons: #b2b2b2;
+$color-back:#F1EDEA;
+$color-back-accent: #262a33;
+$color-form: #e8e2d6;
+$color-blue: #3a5b96;
+$color-brown: #7d7a77;
+
+// Item colors ------------------------------------------
+$color-item-green: 		#24c36c;
+
+//Breakpoints Sections --------------------------------------------------
+$break-s: 320px;
+$break-m: 768px;
+$break-l: 1280px;
