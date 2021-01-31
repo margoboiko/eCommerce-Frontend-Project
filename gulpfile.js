@@ -1,18 +1,18 @@
-let project_folder= 'distin';
+let project_folder= 'dist';
 let source_folder = 'src';
 
 let path = {
 	build:{
-		html: project_folder+'/page/',
+		html: project_folder+'/',
 		css: project_folder+'/css/',
 		js: project_folder+'/js/',
 		img: project_folder+'/img/',
 		fonts: project_folder+'/fonts/',
 	},
 	src:{
-		html: [source_folder+'/page/*.html', '!' + source_folder+'/page/*.html'],
-		css: source_folder+'/scss/style.scss',
-		js: source_folder+'/js/script.js',
+		html: source_folder+'/pages/*.html',
+		css: source_folder+'/scss/*.scss',
+		js: source_folder+'/js/*.js',
 		img: source_folder+'/img/**/*.{jpg,png,svg,gif,webp}',
 		fonts: source_folder+'/fonts/*.ttf',
 	},
@@ -29,6 +29,11 @@ let { src, dest } = require('gulp'),
 	gulp = require('gulp'),
 	browsersync = require('browser-sync').create(),
 	fileinclude = require('gulp-file-include');
+	del = require('del'),
+	scss = require('gulp-sass');
+	imagemin = require('gulp-imagemin');
+	ttf2woff2 = require('gulp-ttf2woff2');
+	ttf2woff = require('gulp-ttf2woff');
 	
 function browserSync(params){
 	browsersync.init({
@@ -47,13 +52,69 @@ function html(){
 		.pipe(browsersync.stream())
 }
 
-function watchFiles (params){
-	gulp.watch([path.watch.html], html);
+function css(){
+	return src(path.src.css)
+		.pipe(
+			scss({
+				outputStyle: 'expanded'
+			})
+		)
+		.pipe(dest(path.build.css))
+		.pipe(browsersync.stream())
 }
 
-let build = gulp.series(html); 
+
+function js(){
+	return src(path.src.js)
+		.pipe(fileinclude())
+		.pipe(dest(path.build.js))
+		.pipe(browsersync.stream())
+}
+
+
+function watchFiles (params){
+	gulp.watch([path.watch.html], html);
+	gulp.watch([path.watch.css], css);
+	gulp.watch([path.watch.js], js);
+	gulp.watch([path.watch.img], images);
+}
+
+function images(){
+	return src(path.src.img)
+		.pipe (
+			imagemin({
+				progressive: true,
+	//			svgoPlugins: [{removeViewBox: false}],
+		//		interlaced: true,
+			//	optimizationLevel: 3
+			})
+		)
+		.pipe(dest(path.build.img))
+		.pipe(browsersync.stream())
+}
+
+function fonts(){
+	//src(path.src.fonts)
+		//.pipe(ttf2woff())
+		//.pipe(dest(path.build.fonts))
+	return src(path.src.fonts)
+	//	.pipe(ttf2woff2())
+		.pipe(dest(path.build.fonts))
+}
+
+
+function clean(){
+	return del(path.clean);
+}
+
+let build = gulp.series(clean, gulp.parallel(js ,css, html, images, fonts)); 
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
+
+exports.fonts = fonts;
+exports.images = images;
+exports.js = js;
+exports.css = css;
 exports.html = html;
 exports.build = build;
 exports.watch = watch;
