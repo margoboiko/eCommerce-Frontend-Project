@@ -282,6 +282,11 @@ body {
 							}
 						}
 					}
+					
+					#more {
+						display: inline;
+					}
+
 					.share {
 						width: 100%;
 						text-align: left;
@@ -350,69 +355,66 @@ body {
 					}
 				}
 			}
-			.descrip {
+			.info {
 				margin-top: 5rem;
 				>ul {
 					text-align: center;
 					li {
 						display: inline-block;
-						font-family: $font-accent;
 						margin: 0 1rem;
 						padding: 1.5rem 3rem;
-						font-size: 24px;
+						font-size: 1.7142857143rem;
 						border-radius: 2rem 2rem 0 0;
-						color: $color-dot;
+						color: #bdc3c7;
 						background-color: inherit;
 						transition: all 0.2s ease;
-					cursor: pointer;
-							&:hover {
-								color: $color-primary;
-								background-color: $color-back-accent;
-							}
-						}
-						li.active {
-							color: $color-primary;
-							background-color: $color-back-accent;
+						cursor: pointer;
+						&:hover {
+							color: #ffffff;
+							background-color: #262a32;
 						}
 					}
-					.tab-box {
-						background-color: $color-back-accent;
+					li.active {
+						color: #ffffff;
+						background-color: #262a32;
+					}
+				}
+				.tab-box {
+					background-color: #262a32;
+					position: relative;
+					.tab {
+						height: 25rem;
+						display: flex;
+						flex-direction: column;
+						flex-wrap: wrap;
+						align-items: flex-start;
+						padding: 5rem;
+						overflow: hidden;
+						position: absolute;
+						left: 0;
+						top: 0;
+						right: 0;
+						bottom: 0;
+						opacity: 0;
+						visibility: hidden;
+						transition: all 0.6s ease;
+						p {
+							width: 48%;
+							color: #ffffff;
+							margin-bottom: 2rem;
+							text-align: left;
+							font-size: 1.1428571429rem;
+							line-height: 1.5;
+						}
+					}
+					.tab.active {
 						position: relative;
-						border-bottom-right-radius: 10px;
-						border-bottom-left-radius: 10px;
-						.tab {
-							height: 25rem;
-							display: flex;
-							flex-direction: column;
-							flex-wrap: wrap;
-							align-items: flex-start;
-							padding: 5rem;
-							overflow: hidden;
-							position: absolute;
-							left: 0;
-							top: 0;
-							right: 0;
-							bottom: 0;
-							opacity: 0;
-							visibility: hidden;
-							transition: all 0.6s ease;
-							p {
-								width: 48%;
-								color: $color-primary;
-								margin-bottom: 2rem;
-								text-align: left;
-								font-size: 1.1428571429rem;
-								line-height: 1.5;
-							}
-						}
-						.tab.active {
-							position: relative;
-							visibility: visible;
-							opacity: 1;
-						}
+						visibility: visible;
+						opacity: 1;
 					}
 				}
 			}
+		}
 		}
 	}
 	.popular-items {
@@ -426,7 +428,7 @@ body {
 				font-size: 24px;
 				font-family: $font-accent;
 				padding: 2rem 0;
-				background: #45413e;
+				background: $color-secondary;
 				-webkit-background-clip: text;
 				-webkit-text-fill-color: transparent;
 				text-align: center;

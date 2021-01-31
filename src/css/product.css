@@ -280,6 +280,9 @@ body {
 .product .wrapper .sub-wrapper .overview .about .add > .amount > button.plus {
   right: 15%;
 }
+.product .wrapper .sub-wrapper .overview .about #more {
+  display: inline;
+}
 .product .wrapper .sub-wrapper .overview .about .share {
   width: 100%;
   text-align: left;
@@ -337,39 +340,36 @@ body {
 .product .wrapper .sub-wrapper .overview > svg path {
   fill: #84bc22;
 }
-.product .wrapper .sub-wrapper .descrip {
+.product .wrapper .sub-wrapper .info {
   margin-top: 5rem;
 }
-.product .wrapper .sub-wrapper .descrip > ul {
+.product .wrapper .sub-wrapper .info > ul {
   text-align: center;
 }
-.product .wrapper .sub-wrapper .descrip > ul li {
+.product .wrapper .sub-wrapper .info > ul li {
   display: inline-block;
-  font-family: "Lato Bold", sans-sefir;
   margin: 0 1rem;
   padding: 1.5rem 3rem;
-  font-size: 24px;
+  font-size: 1.7142857143rem;
   border-radius: 2rem 2rem 0 0;
-  color: #a3b5bd;
+  color: #bdc3c7;
   background-color: inherit;
   transition: all 0.2s ease;
   cursor: pointer;
 }
-.product .wrapper .sub-wrapper .descrip > ul li:hover {
-  color: white;
-  background-color: #262a33;
+.product .wrapper .sub-wrapper .info > ul li:hover {
+  color: #ffffff;
+  background-color: #262a32;
 }
-.product .wrapper .sub-wrapper .descrip > ul li.active {
-  color: white;
-  background-color: #262a33;
+.product .wrapper .sub-wrapper .info > ul li.active {
+  color: #ffffff;
+  background-color: #262a32;
 }
-.product .wrapper .sub-wrapper .descrip .tab-box {
-  background-color: #262a33;
+.product .wrapper .sub-wrapper .info .tab-box {
+  background-color: #262a32;
   position: relative;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
 }
-.product .wrapper .sub-wrapper .descrip .tab-box .tab {
+.product .wrapper .sub-wrapper .info .tab-box .tab {
   height: 25rem;
   display: flex;
   flex-direction: column;
@@ -386,15 +386,15 @@ body {
   visibility: hidden;
   transition: all 0.6s ease;
 }
-.product .wrapper .sub-wrapper .descrip .tab-box .tab p {
+.product .wrapper .sub-wrapper .info .tab-box .tab p {
   width: 48%;
-  color: white;
+  color: #ffffff;
   margin-bottom: 2rem;
   text-align: left;
   font-size: 1.1428571429rem;
   line-height: 1.5;
 }
-.product .wrapper .sub-wrapper .descrip .tab-box .tab.active {
+.product .wrapper .sub-wrapper .info .tab-box .tab.active {
   position: relative;
   visibility: visible;
   opacity: 1;

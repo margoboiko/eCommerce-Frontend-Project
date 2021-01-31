@@ -8,10 +8,49 @@
         <link rel="stylesheet" href="../css/header.css">
         <!-- Link Fontawesome icons -->
         <script src="https://kit.fontawesome.com/d43fe1bd37.js" crossorigin="anonymous"></script>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     </head> 
 
     <body>
+
+      	<!-- Overlay -->
+	<div id="overlay"></div>
+
+	<!-- Cookies Modal -->
+	<div id="cookies">
+		<div class="subwrapper">
+			<h6>This website uses cookies</h6>
+			<p>
+				OSF uses its own and third-party cookies for statistical purposes, to know your preferences, for website performance and interaction with social media offering publicity tailored to your interests. If you continue browsing, we consider that you accept its use.<br>
+				You can expand this information consulting our <a href="#">Cookies Policy Page</a>.
+				<span id="close-cookies"><i class="fas fa-times"></i></span>
+			</p>
+			<button id="accept-cookies" class="btn">Accept</button>
+		</div>
+	</div>
+
+	<!-- Sign In modal -->
+	<form id="signinForm">
+		<h3>Sign in</h3>
+
+		<label for="email">Email</label>
+		<input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+
+		<div class="forgot">
+			<label for="password">Password</label>
+			<a href="#">forgot password</a>
+		</div>
+		<div class="password">
+			<span class="showPassword">
+				<i class="far fa-eye"></i>
+			</span>
+			<!-- At least 6 characters length, contain 1 numeric, 1 uppercase letter, 1 special character -->
+			<input type="password" name="password" pattern="(?=.*\d)(?=.*[!#$%&'()*+,-./:;<=>?@[\]^_`{|}~])(?=.*[A-Z]).{6,}" required>
+		</div>
+
+		<input type="submit" value="Login" id="login">
+		<a href="#" class="register">I don't have an account</a>
+	</form>
+
       <header>
         <div class="wrapper">  
           <a href="./index.html" class="logo">

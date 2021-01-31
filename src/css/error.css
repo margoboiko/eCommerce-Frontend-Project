@@ -60,7 +60,7 @@ body {
   content: "";
   width: 40%;
   background-color: transparent;
-  border-bottom: 1px solid #e5e2df;
+  border-bottom: 1px solid #e8e2d6;
 }
 .breadcrumbs .wrapper h2:after {
   position: absolute;
@@ -69,7 +69,7 @@ body {
   content: "";
   width: 40%;
   background-color: transparent;
-  border-bottom: 1px solid #e5e2df;
+  border-bottom: 1px solid #e8e2d6;
 }
 
 .error {

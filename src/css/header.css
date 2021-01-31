@@ -410,4 +410,245 @@ header > .wrapper nav ul.nav-manage > li .fa, header > .wrapper nav ul.nav-manag
   color: #b2b2b2;
 }
 
+#signinForm {
+  position: absolute;
+  width: 30%;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+  background-color: #ffffff;
+  padding: 3.5714285714rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  cursor: initial;
+  text-align: center;
+  border-radius: 10px;
+}
+#signinForm input[type=submit]#login {
+  text-transform: uppercase;
+  font-size: 1.1428571429rem;
+  padding: 0.5714285714rem 1.4285714286rem;
+  border-width: 0.15rem;
+  border-style: solid;
+  border-radius: 35px;
+  cursor: pointer;
+  display: block;
+  margin: 4.2857142857rem auto 1.5714285714rem;
+  padding: 0.5714285714rem 5rem;
+  border-color: transparent;
+  color: #ffffff;
+  background-color: #84bc22;
+}
+#signinForm input[type=submit]#login:hover {
+  color: #84bc22;
+  border-color: #84bc22;
+  background-color: transparent;
+}
+#signinForm:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#signinForm * {
+  user-select: none;
+}
+#signinForm h3 {
+  color: #45413e;
+  font-size: 2.1428571429rem;
+  margin-bottom: 3rem;
+}
+#signinForm label {
+  color: #45413e;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  float: left;
+  display: inline-block;
+}
+#signinForm a {
+  display: inline-block;
+  color: #84bc22;
+  font-size: 0.8571428571rem;
+}
+#signinForm a:hover {
+  color: #9fdb36;
+}
+#signinForm div.forgot:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+#signinForm div.forgot > a {
+  float: right;
+}
+#signinForm input[type=email] {
+  width: 100%;
+  border: 0.15rem solid #d7d7d7;
+  background-color: #ffffff;
+  padding: 0.8571428571rem 1.4285714286rem;
+  border-radius: 35px;
+  transition: all 0.5s ease;
+  margin-bottom: 2.1428571429rem;
+}
+#signinForm input[type=email]:focus:invalid {
+  border-color: red;
+}
+#signinForm input[type=email]:focus:empty {
+  border-color: red;
+}
+#signinForm input[type=email]:focus:valid {
+  border-color: #84bc22;
+}
+#signinForm input[type=password] {
+  width: 100%;
+  border: 0.15rem solid #d7d7d7;
+  background-color: #ffffff;
+  padding: 0.8571428571rem 1.4285714286rem;
+  border-radius: 35px;
+  transition: all 0.5s ease;
+}
+#signinForm input[type=password]:focus:invalid {
+  border-color: red;
+}
+#signinForm input[type=password]:focus:empty {
+  border-color: red;
+}
+#signinForm input[type=password]:focus:valid {
+  border-color: #84bc22;
+}
+#signinForm input[type=text] {
+  width: 100%;
+  border: 0.15rem solid #d7d7d7;
+  background-color: #ffffff;
+  padding: 0.8571428571rem 1.4285714286rem;
+  border-radius: 35px;
+  transition: all 0.5s ease;
+}
+#signinForm input[type=text]:focus:invalid {
+  border-color: red;
+}
+#signinForm input[type=text]:focus:empty {
+  border-color: red;
+}
+#signinForm input[type=text]:focus:valid {
+  border-color: #84bc22;
+}
+#signinForm div.password {
+  position: relative;
+}
+#signinForm div.password span.showPassword {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
+}
+#signinForm div.password span.showPassword svg {
+  color: #4f4e4c;
+  width: 1.2857142857rem;
+  height: 1.2857142857rem;
+}
+
+div#cookies {
+  position: absolute;
+  width: 60%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 200;
+  background-color: #ffffff;
+  padding: 1.7857142857rem;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.4s ease;
+  cursor: initial;
+  border-radius: 10px;
+}
+div#cookies div.subwrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+}
+div#cookies div.subwrapper button#accept-cookies {
+  text-transform: uppercase;
+  font-size: 1.1428571429rem;
+  padding: 0.5714285714rem 1.4285714286rem;
+  border-width: 0.15rem;
+  border-style: solid;
+  border-radius: 35px;
+  cursor: pointer;
+  min-width: 20%;
+  align-self: flex-end;
+  padding: 0.6428571429rem 3.2857142857rem;
+  border-color: transparent;
+  color: #ffffff;
+  background-color: #84bc22;
+}
+div#cookies div.subwrapper button#accept-cookies:hover {
+  color: #84bc22;
+  border-color: #84bc22;
+  background-color: transparent;
+}
+div#cookies div.subwrapper h6 {
+  color: #84bc22;
+  margin-bottom: 1.1428571429rem;
+  font-size: 1.1428571429rem;
+  line-height: 1.5;
+}
+div#cookies div.subwrapper a {
+  color: #84bc22;
+}
+div#cookies div.subwrapper p {
+  display: inline-block;
+  width: 80%;
+  color: #45413e;
+  font-size: 1rem;
+  line-height: 1.71;
+}
+div#cookies div.subwrapper span#close-cookies {
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+div#cookies div.subwrapper span#close-cookies svg {
+  font-size: 1.5rem;
+}
+div#cookies div.subwrapper span#close-cookies:hover svg path {
+  fill: #84bc22;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  overflow: hidden;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+#overlay.active {
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.74);
+  visibility: visible;
+}
+
+#signinForm.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+div#cookies.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 /*# sourceMappingURL=header.css.map */

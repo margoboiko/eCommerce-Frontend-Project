@@ -7,7 +7,8 @@
         <title>Ruffle Front V-Neck Cardigan</title>
         <link rel="stylesheet" href="../css/product.css">
         <!-- Link Fontawesome icons -->
-	    <script src="https://kit.fontawesome.com/793c03e560.js"></script>
+		<script src="https://kit.fontawesome.com/793c03e560.js"></script>
+		<script src="/node_modules/readmore-js/readmore.min.js"></script>
     </head> 
 
 <body>
@@ -64,8 +65,15 @@
 								<button>Add to cart</button>
 							</div>
 							<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore Beatae vitae dicta sunt explicabo. <br>
-							Nemo enim ipsam voluptatem quia voluptas <span id="dots"></span><span id="more">sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</span></p>
-							<button onclick="myFunction()" id="myBtn">Read more</button>
+							Nemo enim ipsam voluptatem <span id="dots"></span><span id="more">quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+							</span></p>
+							<button onclick="myFunction()" id="myBtn" 
+							style="border: none;
+							background-color: white;
+							padding-top: 10px;
+							padding-bottom: 30px;
+							color: #84bc22;
+							margin-right: 250px;">Read more</button>
 							<div class="share">
 								<span>Share</span>
 								<ul>
@@ -86,7 +94,7 @@
 						</div>
 					</div>
 
-					<div class="descrip">
+					<div class="info">
 						<ul>
 							<li class="active">Description</li>
 							<li>Additional information</li>
@@ -98,12 +106,14 @@
 								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
 								<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
 							</div>
+
 							<div class="tab">
 								<p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
 								<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</p>
 								<p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
 							</div>
+
 							<div class="tab">
 								<p>Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 								<p>Aenean commodo ligula eget dolor. Aenean massa.</p>
@@ -114,6 +124,7 @@
 				</div>
 			</div>
 		</section>
+
 
 		<section class="popular-items">
 			<div class="wrapper">
